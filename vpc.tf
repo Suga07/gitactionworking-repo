@@ -15,7 +15,7 @@ resource "aws_subnet" "pictory-public-1" {
   vpc_id                  = aws_vpc.power.id
   cidr_block              = "192.168.1.0/24"
   map_public_ip_on_launch = "true"
-  availability_zone       = "us-west-2a"
+  availability_zone       = "me-south-1a"
 
   tags = {
     Name = "pictory-public-1"
@@ -26,7 +26,7 @@ resource "aws_subnet" "pictory-public-2" {
   vpc_id                  = aws_vpc.power.id
   cidr_block              = "192.168.2.0/24"
   map_public_ip_on_launch = "true"
-  availability_zone       = "us-west-2b"
+  availability_zone       = "me-south-1b"
 
   tags = {
     Name = "pictory-public-2"
@@ -37,7 +37,7 @@ resource "aws_subnet" "pictory-private-1" {
   vpc_id                  = aws_vpc.power.id
   cidr_block              = "192.168.4.0/24"
   map_public_ip_on_launch = "false"
-  availability_zone       = "us-west-2a"
+  availability_zone       = "me-south-1a"
 
   tags = {
     Name = "pictory-private-1"
@@ -48,7 +48,7 @@ resource "aws_subnet" "pictory-private-2" {
   vpc_id                  = aws_vpc.power.id
   cidr_block              = "192.168.5.0/24"
   map_public_ip_on_launch = "false"
-  availability_zone       = "us-west-2b"
+  availability_zone       = "me-south-1b"
 
   tags = {
     Name = "pictory-private-2"
